@@ -153,4 +153,5 @@ LOGGING = {
     }
 }
 import dj_database_url
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres:password@localhost:5432/to_do')}
 #DATABASES['default'] = dj_database_url.config()
