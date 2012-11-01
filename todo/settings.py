@@ -1,5 +1,5 @@
 # Django settings for todo project.
-import dj_database_url
+#import dj_database_url
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -104,6 +104,7 @@ ROOT_URLCONF = 'todo.urls'
 WSGI_APPLICATION = 'todo.wsgi.application'
 
 TEMPLATE_DIRS = (
+    'C:/Users/jchou/Heroku/todo/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -113,7 +114,7 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+    #'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'list',
@@ -151,5 +152,5 @@ LOGGING = {
         },
     }
 }
-
-DATABASES['default'] = dj_database_url.config()
+import dj_database_url
+#DATABASES['default'] = dj_database_url.config()
